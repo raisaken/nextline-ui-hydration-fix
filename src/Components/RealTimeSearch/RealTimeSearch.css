@@ -1,0 +1,20 @@
+
+
+
+/* p {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite;
+}
+.main {
+  margin: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  text-align: center;
+} */
