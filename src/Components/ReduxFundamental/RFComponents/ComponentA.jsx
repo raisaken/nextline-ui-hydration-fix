@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { submit } from "../RFredux/actions";
+import ComponentC from "./ComponentC";
 import ComponentB from "./ComponentB";
+import ComponentD from "./ComponentD";
 
 const ComponentA = () => {
   const [value, setValue] = useState("");
@@ -14,6 +16,8 @@ const ComponentA = () => {
     <>
       <input type="text" value={value} onChange={changeHandler} />
       <ComponentB text={value} />
+      <ComponentC text={value} />
+      <ComponentD text={value} />
     </>
   );
 };

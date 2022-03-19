@@ -17,8 +17,7 @@ function App() {
       <StyledButton>StyledButton</StyledButton>
       <MapReduceFilter></MapReduceFilter>
       <ComponentA />
-      <ComponentC />
-      <ComponentD />
+     
     </div>
   );
 }
