@@ -14,6 +14,7 @@ const ComponentA = () => {
   };
   return (
     <>
+      <p>Enter value to change through redux</p>
       <input type="text" value={value} onChange={changeHandler} />
       <ComponentB text={value} />
       <ComponentC text={value} />

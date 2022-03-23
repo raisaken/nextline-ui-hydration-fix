@@ -16,6 +16,7 @@ function RealTimeSearch() {
       />
       <div className="main">
         {Data.filter((item) => {
+          console.log(item)
           if (list === "") {
             return item;
           } else if (item.name.includes(list)) {

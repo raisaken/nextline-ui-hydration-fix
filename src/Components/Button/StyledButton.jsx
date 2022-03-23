@@ -1,14 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../Button/Button";
+import Button from "./Button";
 
 const Modifiedbutton = styled(Button)`
   background-color: red;
   border: 2px solid green;
-  border-radius:5px;
+  border-radius: 5px;
 `;
 
-function StyledButton({children}) {
+function StyledButton({ children }) {
   return <Modifiedbutton>{children}</Modifiedbutton>;
 }
 
