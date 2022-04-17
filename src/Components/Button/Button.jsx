@@ -4,10 +4,10 @@ import styled from 'styled-components'
 
 const StyledButton = styled.button`
 background-color:green;
-width:150px;
-height:50px;
-border: 2px solid red;
-border-radius:5px;
+width:160px;
+height:60px;
+border: 5px solid red;
+border-radius:4px;
 `;
 function Button({children, className}) {
   return (
