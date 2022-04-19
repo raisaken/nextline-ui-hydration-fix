@@ -1,12 +1,10 @@
 import "./App.css";
-import Button from "./Components/Button/Button";
-import StyledButton from "./Components/StyledButton/StyledButton";
+import Multipleusers from "./apps/dynamic_route/pages/Multipleusers";
 
 function App() {
   return (
     <div className="App">
-      <Button>Button</Button>
-      <StyledButton>StyledButton</StyledButton>
+      <Multipleusers />
     </div>
   );
 }
