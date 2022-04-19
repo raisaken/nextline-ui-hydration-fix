@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { users } from "../assets/data";
 
 function Multipleusers() {
@@ -6,8 +7,10 @@ function Multipleusers() {
     <div>
       {users.map((user) => {
         return (
-          <ul>
-            <li id={user.id}>{user.name}</li>
+          <ul key={user.id}>
+            <Link to={`${user.id}`}>
+              <li user={user}>{user.name}</li>
+            </Link>
           </ul>
         );
       })}
