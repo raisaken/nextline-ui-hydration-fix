@@ -6,7 +6,7 @@ function Home() {
     <div style={{marginLeft:"50px"}}>
       <h1>Apps</h1>
       <Link to="users">Dynamic routes</Link><br />
-      <Link to="protectedroutes">Protected routes</Link>
+      <Link to="protectedroutes">Protected routes</Link> <br />
       <Link to="counter">Redux Counter</Link>
     </div>
   );
