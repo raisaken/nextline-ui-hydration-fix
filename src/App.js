@@ -1,21 +1,40 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Multipleusers from "./apps/dynamic_route/pages/Multipleusers";
-import Singleuser from "./apps/dynamic_route/pages/Singleuser";
+import Home from "./apps";
+import Users from "./apps/dynamic_route/pages/Users";
+import User from "./apps/dynamic_route/pages/User";
+import ErrorPage from "./apps/ErrorPage";
+import ProtectedRoutes from "./apps/protected_routes/pages/ProtectedRoutes";
+import Dashboard from "./apps/protected_routes/pages/Dashboard";
+import Profile from "./apps/protected_routes/pages/Profile";
+import { Login } from "./apps/protected_routes/pages/Login";
+import { Auth } from "./apps/protected_routes/config/Auth";
+import Counter from "./apps/redux_counter/Counter";
 
 function App() {
   return (
-    <React.Fragment>
+    <Auth>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Multipleusers />}></Route>
-          <Route path=":id" element={<Singleuser />}>
-            {" "}
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/counter" element={<Counter />} />
+
+          <Route path="users">
+            <Route index={true} element={<Users />}></Route>
+            <Route index={false} path=":id" element={<User />} />
           </Route>
+          {/* <Route path="users/:id" element={<User />} />  */}
+
+          <Route path="protectedroutes" element={<ProtectedRoutes />} />
+          <Route path="protectedroutes/dashboard" element={<Dashboard />} />
+          <Route path="protectedroutes/profile" element={<Profile />} />
+
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
-    </React.Fragment>
+    </Auth>
   );
 }
 

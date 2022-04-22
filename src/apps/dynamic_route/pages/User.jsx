@@ -2,7 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { users } from "../assets/data";
 
-function Singleuser() {
+function User() {
   const paramid = useParams();
   console.log(users[paramid.id]);
   return (
@@ -16,4 +16,4 @@ function Singleuser() {
   );
 }
 
-export default Singleuser;
+export default User;
