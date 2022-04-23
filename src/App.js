@@ -10,7 +10,7 @@ import Dashboard from "./apps/protected_routes/pages/Dashboard";
 import Profile from "./apps/protected_routes/pages/Profile";
 import { Login } from "./apps/protected_routes/pages/Login";
 import { Auth } from "./apps/protected_routes/config/Auth";
-import Counter from "./apps/redux_counter/Counter";
+import Testcounter from "./apps/test/redux_counter/counter";
 
 function App() {
   return (
@@ -19,7 +19,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/counter" element={<Counter />} />
+          {/* <Route path="/counter" element={<Counter />} /> */}
+          
+          <Route path="/testcounter" element={<Testcounter />} />
 
           <Route path="users">
             <Route index={true} element={<Users />}></Route>
