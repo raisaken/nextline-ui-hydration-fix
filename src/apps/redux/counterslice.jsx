@@ -2,7 +2,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
 
 export const fetchTodos = createAsyncThunk("todos/gettodos", async () => {
-  return fetch(`https://jsonplaceholder.typicode.com/notodos?_limit=5`).then((res) => res.json());
+  return fetch(`https://jsonplaceholder.typicode.com/todos?_limit=5`).then((res) => res.json());
 });
 
 const counterslice = createSlice({
