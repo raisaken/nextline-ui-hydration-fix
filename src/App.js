@@ -10,7 +10,7 @@ import Dashboard from "./apps/protected_routes/pages/Dashboard";
 import Profile from "./apps/protected_routes/pages/Profile";
 import { Login } from "./apps/protected_routes/pages/Login";
 import { Auth } from "./apps/protected_routes/config/Auth";
-import Counter from "./apps/redux/Counter";
+import Counter from "./apps/Posts/Counter";
 
 function App() {
   return (
