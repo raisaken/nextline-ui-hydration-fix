@@ -20,16 +20,12 @@ const PostSlice = createSlice({
     },
   },
   extraReducers: (builder) => {
-    builder.addCase(getPost.pending, (state, action) => {
-      state.status = "pending";
-    });
+   
     builder.addCase(getPost.fulfilled, (state, action) => {
       state.status = "fulfilled";
       state.posts = action.payload;
     });
-    builder.addCase(getPost.rejected, (state, action) => {
-      state.status = "rejected";
-    });
+    
   },
 });
 export const {increment} = PostSlice.actions;
