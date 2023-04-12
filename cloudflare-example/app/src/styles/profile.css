@@ -1,0 +1,16 @@
+.content-title{
+font-size: 20px!important;
+font-weight: 700!important;
+line-height: 24px!important;
+color:#3C8A8B
+}
+.content-title-input{
+border:none;
+border-width: 0;
+box-shadow:none ;
+font-size: 20px;
+font-family: 700;
+color: #646464;
+padding: 5px;
+}
+    
