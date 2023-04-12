@@ -25,7 +25,7 @@ const comments = [
   },
 ];
 
-import type { LoaderArgs, LoaderFunction } from '@remix-run/node';
+import type { LoaderArgs, LoaderFunction } from '@remix-run/cloudflare';
 import fetcher from '~/utils/fetcher';
 import urls from '~/api/endpoint';
 import { CatchBoundaryComponent, useMatches } from '@remix-run/react';
